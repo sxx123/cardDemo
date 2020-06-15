@@ -1,0 +1,29 @@
+Page({
+  data:{
+    studentList:[]
+  },
+  getId:function(){
+    wx.cloud.callFunction({
+        name:"getopenId",
+        success(res){
+          console.log(res.result.openid)
+        },
+        fail(res){
+          console.log("获取失败",res)
+        }
+    })
+  },
+  onShow:function(){
+    var that=this
+    wx.cloud.database().collection('failCard').get({
+      success(res){
+        that.setData({
+          studentList:res.data
+        })
+      },
+      fail(res){
+        console.log(res)
+      }
+    })
+  }
+})

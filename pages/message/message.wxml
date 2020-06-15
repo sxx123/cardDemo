@@ -1,0 +1,12 @@
+<!--index.wxml-->
+<view class="container">
+  <text class="tit">辅导员管理</text> 
+  <view class="nameList">
+    <view class="list" wx:for="{{studentList}}"  wx:key="_id">
+      <text>姓名：{{item.name}}</text>
+      <text>班级：{{item.studentclass}}</text>
+      <text>联系方式：{{item.phone}}</text>
+      <text>当前位置：{{item.curraddress}}</text>
+    </view>
+  </view>
+</view>

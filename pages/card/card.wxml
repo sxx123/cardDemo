@@ -1,0 +1,8 @@
+<view class="container">
+    <view class="cardBox" bindtap="cardBtn">
+        <text class="card">{{daka}}</text>
+    </view>
+    <text class="maddress">默认定位：{{maddress}}</text>
+     <text class="maddress">当前位置：{{curraddress}}</text>
+    <text class="tit">提示：切记打卡固定时间为晚上22.00</text>
+</view>

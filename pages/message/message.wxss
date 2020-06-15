@@ -1,0 +1,31 @@
+/**index.wxss**/
+.container{
+  padding:10px 0 ;
+}
+.tit{
+  font-size: 40rpx;
+  font-weight: 600;
+  margin-bottom: 20rpx;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.nameList{
+  width: 100%;
+  height: auto;
+}
+.list{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  border:1px solid #efefef;
+  margin-bottom:5px;
+  padding: 0 10px;
+  box-sizing: border-box;
+}
+.list text{
+  font-size: 20rpx;
+  font-size: 26rpx;
+  line-height: 44rpx;
+  color: red;
+}

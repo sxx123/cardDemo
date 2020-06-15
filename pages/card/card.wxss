@@ -1,0 +1,23 @@
+.cardBox{
+  width: 300rpx;
+  height: 300rpx;
+  border-radius: 100%;
+  background-color: orange;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.cardBox  .card{
+    font-size: 44rpx;
+    font-weight: 600;
+}
+.tit{
+  font-size: 22rpx;
+  color: #999;
+  margin-top: 20rpx;
+}
+.maddress{
+  font-size: 30rpx;
+  margin: 20rpx 0;
+}
